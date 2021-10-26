@@ -1,0 +1,204 @@
+@import './reset.scss';
+@import './mixin.scss';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,600;1,700;1,800;1,900&display=swap');
+
+/*** VARIABLES ***/
+$font: 'Montserrat', 'Arial', 'Helvetica', 'Verdana';
+$orange: #ce4500;
+
+/*** GENERAL ***/
+body{
+    margin: 0;
+    padding: 0;
+    position: relative;
+    z-index: 1;
+    font-family: $font;
+    background-color: #FAFAFA;
+}
+
+.flex{
+    display: flex;
+    .col {
+        flex-direction: column;
+    }
+    .row {
+        flex-direction: row;
+    }
+}
+.flex1{
+    flex: 1;
+}
+.flex2{
+    flex: 2;
+}
+.flex3{
+    flex: 3;
+}
+.flex4{
+    flex: 4;
+}
+.container {
+    max-width: 1440px;
+    padding: 0 20px;
+    margin: 0 auto;
+    flex: 1;
+}
+
+/*** HEADER ***/
+
+#header{
+    padding: 10px 0;
+    background-color: #fff;
+
+    .logo-container{
+        padding: 0 20px;
+        #header-logo-link{
+            align-items: center;
+            #header-logo{
+                display: inline-block;
+                width: 60px;
+                height: 60px;
+                
+            }
+            .logo-text{
+                padding: 5px 0;
+                display: inline-block;
+                font-size: 12px;
+                font-weight: 600;
+                text-transform: uppercase;
+                color: #111;
+
+            }
+        }
+    }
+}
+
+#header-nav{
+    align-items: center;
+    justify-content: flex-end;
+    .header-nav-link{
+        font-size: 14px;
+        font-weight: 600;
+        color: #111;
+        padding: 10px;
+        @include transitionEase();
+        &:hover{
+            color: $orange;
+        }
+    }
+   
+}
+
+/*** HOMEPAGE ***/
+/* Homepage - Headeline */
+#homepage-headline{
+    &>.container{
+        z-index: 2;
+    }
+    padding: 60px 0;
+    background-color: #111;
+    position: relative;
+    overflow: hidden;
+    &:after{
+        content: "";
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url('../img/background-homapge-headline.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center top;
+        @include opacity(0.10);
+        z-index:1;
+    }
+    h1.headline-title,
+    .header-headline{
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        font-size: 38px;
+        color: #fff;
+        font-weight: 800;
+        text-transform: uppercase;
+        text-shadow: 0px 2px 3px rgba(0,0,0,0.3); 
+
+        strong{
+            color: $orange;
+        }
+    }
+}
+.headline-links{
+    margin: 60px 0;
+    .headline-link-container{
+        align-items: center;
+        justify-content: center;
+        padding: 0 20px;
+        .headline-link{
+            padding: 10px 15px;
+            @include borderRadius(5px);
+            background-color: #fff;
+            align-items: center;
+            @include transitionEase();
+            @include buttonShadow();
+            position: relative;
+
+            &:after{
+                display: none;
+            }
+            .icon{
+                display: inline-block;
+                width: 40px;
+                height: 40px;
+                background-color: $orange;
+                margin-right: 5px;
+                margin-top: -5px;
+
+                @include transitionEase();
+                &.car{
+                    @include maskImage('../img/car.svg');
+                }
+                &.home{
+                    @include maskImage('../img/home.svg');
+                }
+                &.health{
+                    @include maskImage('../img/health.svg');
+                }
+            }
+            .label{
+                display: inline-block;
+                font-size: 16px;
+                font-weight: 600;
+                @include transitionEase();
+                color: $orange;
+            }
+
+            &:hover{
+                background-color: $orange;
+                padding-right: 40px;
+                
+                .icon{
+                    background-color: #fff;
+                }
+                .label{
+                    color: #fff;
+                }
+                &:after{
+                    content: "";
+                    display: inline-block;
+                    height: 25px;
+                    width: 15px;
+                    @include maskImage('../img/arrow-right.svg');
+                    position: absolute;
+                    z-index: 2;
+                    top: 15px;
+                    left: 100%; 
+                    margin-left: -30px;
+                    background-color: #fff;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,4 @@
+COMPONENTS=WebServer
+WEBSERVER_HTTP_PORT=9000
+
+BASE_PATH=C:\wamp64\www\mm-assurances/
