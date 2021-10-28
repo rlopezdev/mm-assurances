@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,600;1,700;1,800;1,900&display=swap");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -99,16 +100,17 @@ body {
   position: relative;
   z-index: 1;
   font-family: "Montserrat", "Arial", "Helvetica", "Verdana";
-  background-color: #FAFAFA;
+  color: #111;
+  background-color: #f2f2f2;
 }
 
 .flex {
   display: flex;
 }
-.flex .col {
+.flex.col {
   flex-direction: column;
 }
-.flex .row {
+.flex.row {
   flex-direction: row;
 }
 
@@ -133,6 +135,96 @@ body {
   padding: 0 20px;
   margin: 0 auto;
   flex: 1;
+}
+
+section {
+  padding: 60px 0;
+  z-index: 1;
+}
+section h2 {
+  display: inline-block;
+  font-size: 32px;
+  font-weight: 600;
+  color: #ce4500;
+  padding-bottom: 20px;
+}
+
+.btn-container {
+  margin-top: 20px;
+}
+.btn-container .btn-orange-gradient {
+  display: inline-block;
+  padding: 15px 15px;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ce4500+0,e2ad00+100 */
+  background: #ce4500;
+  /* Old browsers */
+  background: -moz-linear-gradient(45deg, #ce4500 0%, #e2ad00 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(45deg, #ce4500 0%, #e2ad00 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(45deg, #ce4500 0%, #e2ad00 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#ce4500", endColorstr="#e2ad00",GradientType=1 );
+  /* IE6-9 fallback on horizontal gradient */
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -moz-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3);
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  position: relative;
+}
+.btn-container .btn-orange-gradient:after {
+  display: none;
+  margin-left: 0;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.btn-container .btn-orange-gradient:hover {
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#e2ad00+0,ce4500+100 */
+  background: #e2ad00;
+  /* Old browsers */
+  background: -moz-linear-gradient(45deg, #e2ad00 0%, #ce4500 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(45deg, #e2ad00 0%, #ce4500 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(45deg, #e2ad00 0%, #ce4500 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#e2ad00", endColorstr="#ce4500",GradientType=1 );
+  /* IE6-9 fallback on horizontal gradient */
+  padding-right: 40px;
+}
+.btn-container .btn-orange-gradient:hover:after {
+  content: "";
+  display: inline-block;
+  height: 25px;
+  width: 15px;
+  mask-image: url("../img/arrow-right.svg");
+  -webkit-mask-image: url("../img/arrow-right.svg");
+  mask-size: cover;
+  -webkit-mask-size: cover;
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  position: absolute;
+  z-index: 2;
+  top: 10px;
+  left: 100%;
+  margin-left: -30px;
+  background-color: #fff;
 }
 
 /*** HEADER ***/
@@ -288,6 +380,14 @@ body {
   mask-repeat: no-repeat;
   -webkit-mask-repeat: no-repeat;
 }
+.headline-links .headline-link-container .headline-link .icon.pro {
+  mask-image: url("../img/professional.svg");
+  -webkit-mask-image: url("../img/professional.svg");
+  mask-size: cover;
+  -webkit-mask-size: cover;
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+}
 .headline-links .headline-link-container .headline-link .label {
   display: inline-block;
   font-size: 16px;
@@ -297,6 +397,7 @@ body {
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
   color: #ce4500;
+  white-space: nowrap;
 }
 .headline-links .headline-link-container .headline-link:hover {
   background-color: #ce4500;
@@ -325,6 +426,283 @@ body {
   left: 100%;
   margin-left: -30px;
   background-color: #fff;
+}
+
+/* Homepage Service icons */
+#homepage-services-icons-section {
+  padding: 20px 0;
+}
+
+.services-icon-container {
+  padding: 20px;
+  align-items: center;
+  justify-content: center;
+}
+.services-icon-container .icon {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  margin-bottom: 10px;
+}
+.services-icon-container .label {
+  display: inline-block;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  color: #111;
+}
+.services-icon-container .label strong {
+  font-weight: 800;
+  color: #ce4500;
+}
+
+/* Homepage Slider */
+#homepage-slider-section {
+  background-color: #fff;
+  z-index: 2;
+  -moz-box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.3);
+  padding: 0;
+}
+
+#homepage-slider {
+  height: 460px;
+  overflow: hidden;
+}
+#homepage-slider .homepage-slider-item {
+  height: 460px;
+}
+#homepage-slider .homepage-slider-item img {
+  display: inline-block;
+  width: 100%;
+  height: auto;
+}
+
+.homepage-slide-content {
+  padding: 40px;
+  justify-content: center;
+}
+.homepage-slide-content h2 {
+  display: inline-block;
+  font-size: 32px;
+  font-weight: 600;
+  color: #ce4500;
+  padding: 20px 0;
+}
+.homepage-slide-content p {
+  display: inline-block;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 500;
+}
+
+.bx-wrapper {
+  border: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.bx-wrapper .bx-prev {
+  left: -50px;
+  margin-left: 0;
+}
+.bx-wrapper .bx-next {
+  left: 100%;
+  margin-right: 20px;
+}
+
+/* Homepage agence */
+#homepage-agence > .container {
+  align-items: center;
+}
+#homepage-agence p {
+  margin: 20px 0;
+  font-size: 18px;
+  font-weight: 500;
+}
+#homepage-agence p strong {
+  font-weight: 700;
+  color: #ce4500;
+}
+
+/* Homepage réseaux sociaux */
+#homepage-follow {
+  background-color: #ce4500;
+  position: relative;
+  overflow: hidden;
+}
+#homepage-follow > .container {
+  align-items: center;
+  z-index: 2;
+}
+#homepage-follow:after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/background-homapge-social.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  /* Netscape */
+  -moz-opacity: 0.1;
+  /* Safari 1.x */
+  -khtml-opacity: 0.1;
+  /* Good browsers */
+  opacity: 0.1;
+  z-index: 1;
+}
+#homepage-follow h2 {
+  color: #fff;
+  text-transform: uppercase;
+}
+#homepage-follow .social-icons-container {
+  margin-top: 20px;
+}
+#homepage-follow .social-icons-container .homepage-social-icon {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  background-color: #fff;
+  margin: 0 20px;
+}
+#homepage-follow .social-icons-container .homepage-social-icon.facebook {
+  mask-image: url("../img/social-facebook.svg");
+  -webkit-mask-image: url("../img/social-facebook.svg");
+  mask-size: cover;
+  -webkit-mask-size: cover;
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+}
+#homepage-follow .social-icons-container .homepage-social-icon.instagram {
+  mask-image: url("../img/social-insta.svg");
+  -webkit-mask-image: url("../img/social-insta.svg");
+  mask-size: cover;
+  -webkit-mask-size: cover;
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+}
+#homepage-follow .social-icons-container .homepage-social-icon.snapchat {
+  mask-image: url("../img/social-snapchat.svg");
+  -webkit-mask-image: url("../img/social-snapchat.svg");
+  mask-size: cover;
+  -webkit-mask-size: cover;
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+}
+
+/*** FOOTER ***/
+footer {
+  padding: 0;
+}
+footer .footer-top {
+  background-color: #333;
+}
+footer .footer-top .footer-top-part {
+  padding: 40px 20px 20px 20px;
+}
+footer .footer-top .footer-top-part.logo {
+  justify-content: center;
+}
+footer .footer-top .footer-top-part.logo .footer-logo {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+}
+footer h3.footer-title {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 800;
+  color: #fff;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+}
+footer .footer-list {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+}
+footer .footer-list li {
+  display: inline-block;
+  padding: 5px 5px 5px 15px;
+  width: 100%;
+  position: relative;
+}
+footer .footer-list li:after {
+  content: "";
+  width: 4px;
+  height: 4px;
+  background: #ccc;
+  position: absolute;
+  top: 11px;
+  left: 0;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+footer .footer-list li a {
+  display: inline-block;
+  color: #ccc;
+  font-size: 14px;
+}
+footer .footer-list li a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.footer-contact {
+  height: 30px;
+  padding: 0;
+  margin: 5px 0;
+  align-items: center;
+}
+.footer-contact .icon {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-color: #ce4500;
+  margin-right: 10px;
+}
+.footer-contact .icon.phone {
+  mask-image: url("../img/icon-phone.svg");
+  -webkit-mask-image: url("../img/icon-phone.svg");
+  mask-size: cover;
+  -webkit-mask-size: cover;
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+}
+.footer-contact .icon.mail {
+  mask-image: url("../img/icon-mail.svg");
+  -webkit-mask-image: url("../img/icon-mail.svg");
+  mask-size: cover;
+  -webkit-mask-size: cover;
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+}
+.footer-contact .icon.address {
+  mask-image: url("../img/icon-address.svg");
+  -webkit-mask-image: url("../img/icon-address.svg");
+  mask-size: cover;
+  -webkit-mask-size: cover;
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+}
+.footer-contact .footer-contact-link {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.footer-bottom {
+  background-color: #111;
+  padding: 20px;
+  color: #ccc;
+  text-align: center;
+  font-size: 14px;
 }
 
 /*# sourceMappingURL=styles.css.map */
