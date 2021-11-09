@@ -1,0 +1,99 @@
+
+/*** FOOTER ***/
+footer{
+    padding: 0;
+    .footer-top{
+        background-color: #333;
+        justify-content: center;
+        .footer-top-part{
+            padding: 40px 20px 20px 20px;
+            &.logo{
+                justify-content: center;
+                .footer-logo{
+                    display: inline-block;
+                    width: 100px;
+                    height:100px;
+                }
+            }
+        }
+       
+    }
+    h3.footer-title{
+        display: inline-block;
+        font-size: 18px; 
+        font-weight: 800;
+        color: #fff;
+        text-transform: uppercase;
+        padding-bottom: 20px;
+    }
+    .footer-list{
+        display: inline-block;
+        padding: 0;
+        margin: 0;
+        li{
+            display: inline-block;
+            padding: 5px 5px 5px 15px;
+            width: 100%;
+            position: relative;
+            &:after{
+                content: "";
+                width: 4px;
+                height: 4px;
+                background: #ccc;
+                position: absolute;
+                top: 11px;
+                left: 0;
+                @include borderRadius(3px);
+            }
+            a{
+                display: inline-block;
+                color: #ccc;
+                font-size: 14px;
+                &:hover{
+                    color: #fff;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+.footer-contact{
+    height: 30px;
+    padding:0;
+    margin: 5px 0;
+    align-items: center;
+    .icon{
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        background-color: $orangeLight;
+        margin-right: 10px;
+
+        &.phone {
+            @include maskImage('../img/icon-phone.svg');
+        }
+        &.mail{
+            @include maskImage('../img/icon-mail.svg');
+        }
+        &.address{
+            @include maskImage('../img/icon-address.svg');
+        }
+    }
+    .footer-contact-link{
+        color: #fff;
+        font-size: 16px;
+        font-weight: 500;
+    }
+}
+
+.footer-bottom{
+    background-color: #111;
+    padding: 20px;
+    color: #ccc;
+    text-align: center ;
+    font-size: 14px;
+    justify-content: center;
+    .container{
+        align-items: center;
+    }
+}

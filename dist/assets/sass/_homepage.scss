@@ -1,0 +1,264 @@
+
+/*** HOMEPAGE ***/
+/* Homepage - Headeline */
+#homepage-headline{
+    &>.container{
+        z-index: 2;
+    }
+    padding: 60px 0;
+    background-color: #111;
+    position: relative;
+    overflow: hidden;
+    &:after{
+        content: "";
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url('../img/background-homapge-headline.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center top;
+        @include opacity(0.10);
+        z-index:1;
+    }
+    h1.headline-title,
+    .header-headline{
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        font-size: 38px;
+        color: #fff;
+        font-weight: 800;
+        text-transform: uppercase;
+        text-shadow: 0px 2px 3px rgba(0,0,0,0.3); 
+
+        strong{
+            color: $orange;
+        }
+    }
+}
+.headline-links{
+    margin: 60px 0;
+    .headline-link-container{
+        align-items: center;
+        justify-content: center;
+        padding: 0 20px;
+        .headline-link{
+            padding: 10px 15px;
+            @include borderRadius(5px);
+            background-color: #fff;
+            align-items: center;
+            @include transitionEase();
+            @include buttonShadow();
+            position: relative;
+
+            &:after{
+                display: none;
+            }
+            .icon{
+                display: inline-block;
+                width: 40px;
+                height: 40px;
+                background-color: $orange;
+                margin-right: 5px;
+                margin-top: -5px;
+
+                @include transitionEase();
+                &.car{
+                    @include maskImage('../img/car.svg');
+                }
+                &.home{
+                    @include maskImage('../img/home.svg');
+                }
+                &.health{
+                    @include maskImage('../img/health.svg');
+                }
+                &.pro{
+                    @include maskImage('../img/professional.svg');
+                }
+            }
+            .label{
+                display: inline-block;
+                font-size: 16px;
+                font-weight: 600;
+                @include transitionEase();
+                color: $orange;
+                white-space: nowrap;
+            }
+
+            &:hover{
+                background-color: $orange;
+                padding-right: 40px;
+                
+                .icon{
+                    background-color: #fff;
+                }
+                .label{
+                    color: #fff;
+                }
+                &:after{
+                    content: "";
+                    display: inline-block;
+                    height: 25px;
+                    width: 15px;
+                    @include maskImage('../img/arrow-right.svg');
+                    position: absolute;
+                    z-index: 2;
+                    top: 15px;
+                    left: 100%; 
+                    margin-left: -30px;
+                    background-color: #fff;
+                }
+            }
+        }
+    }
+}
+/* Homepage Service icons */
+#homepage-services-icons-section{
+    padding: 20px 0;
+}
+.services-icon-container{
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+
+    .icon{
+        display: inline-block;
+        width: 80px;
+        height: 80px;
+        margin-bottom: 10px;
+    }
+    .label{
+        display: inline-block;
+        text-align: center;
+        font-size: 16px;
+        font-weight: 600;
+        color: #111;
+        strong{
+            font-weight: 800;
+            color: $orange;
+        } 
+    }
+}
+/* Homepage Slider */
+#homepage-slider-section{
+    background-color: #fff;
+    z-index: 2;
+    @include boxShadow(0,0,8px,0,rgba(0,0,0,0.3));
+    padding: 0;
+}
+#homepage-slider{
+    height: 460px;
+    overflow: hidden;
+    .homepage-slider-item{
+        height: 460px;
+
+        img{
+            display: inline-block;
+            width: 100%;
+            height: auto;
+        }
+       
+
+    }
+}
+.homepage-slide-content{
+    padding: 40px;
+    justify-content: center;
+    h2 {
+        color: $orange;
+        padding: 20px 0;
+    }
+    p{
+        display: inline-block;
+        font-size: 18px;
+        line-height: 24px;
+        font-weight: 500;
+    }
+}
+.bx-wrapper{
+    border: none;
+    @include noShadow();
+    .bx-prev{
+        left: -50px;
+        margin-left: 0;
+    }
+    .bx-next{
+        left: 100%;
+        margin-right: 20px;
+    }
+}
+
+/* Homepage agence */
+#homepage-agence{
+    &>.container{
+        align-items: center;
+    }
+    h2{
+        text-align: center;
+    }
+    p{
+        margin: 20px 0;
+        font-size: 18px;
+        font-weight: 500;
+        strong{
+            font-weight: 700;
+            color: $orange;
+        }
+    }
+  
+}
+ 
+/* Homepage réseaux sociaux */
+#homepage-follow{
+    background-color: $orange;
+    position: relative;
+    overflow: hidden;
+    &>.container{
+        align-items: center;
+        z-index: 2;
+    }
+    &:after{
+        content: "";
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url('../img/background-homapge-social.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        @include opacity(0.10);
+        z-index:1;
+    }
+    h2{
+        color: #fff;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    .social-icons-container{
+        margin-top: 20px;
+        .homepage-social-icon{
+            display: inline-block; 
+            width: 60px;
+            height: 60px;
+            background-color: #fff;
+            margin: 0 20px;
+
+            &.facebook{
+                @include maskImage('../img/social-facebook.svg');
+            }
+            &.instagram{
+                @include maskImage('../img/social-insta.svg');
+            }
+            &.snapchat{
+                @include maskImage('../img/social-snapchat.svg');
+            }
+        }
+    }
+}
