@@ -6,7 +6,7 @@ module.exports = (webServer) => {
         method: 'get',
         controller: (req, res, next) => {
             res.setHeader("Content-Type", "text/html")
-            res.sendFile(process.env.BASE_PATH + '/dist/contact.html')
+            res.sendFile(process.env.BASE_PATH + '/dist/assurance-habitation.html')
         }
     }]
 }
