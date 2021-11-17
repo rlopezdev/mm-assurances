@@ -6,6 +6,7 @@
         <!-- JS -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+        <script src="assets/js/parallax.min.js"></script>
 
         <!-- CSS -->
         <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
@@ -13,27 +14,81 @@
     </head>
     <body>
         <div id="app">
-            <header id="header">
-                <div class="container flex row">
-                    <div class="logo-container">
-                        <a href="#" class="flex col" id="header-logo-link">
-                            <img src="assets/img/mm-assurances-logo.svg" alt="logo MM Assurances" id="header-logo">
-                            <span class="logo-text">Assurances</span>
-                        </a>
-                    </div>
-                    <nav id="header-nav" class="flex1 flex row">
-                      <a href="/assurance-auto-moto" class="header-nav-link">Assurance Automobile</a>
-                      <a href="/assurance-habitation" class="header-nav-link">Assurance Habitation</a>
-                      <a href="/assurance-sante-prevoyance" class="header-nav-link">Santé / Prévoyance</a>
-                      <a href="/assurance-professionnels" class="header-nav-link">Professionnels</a>
-                      <a href="/agence-toulouse-centre" class="header-nav-link">L'agence</a>
-                      <a href="/contact" class="header-nav-link">Contact</a>
-                    </nav>
+          <header id="header" class="flex row">
+            <div class="container row">
+                <div class="logo-container">
+                    <a href="/" class="flex col" id="header-logo-link">
+                        <img src="assets/img/mm-assurances-logo.svg" alt="logo MM Assurances" id="header-logo">
+                        <span class="logo-text">Assurances</span>
+                    </a>
                 </div>
-            </header>
-            <section class="flex col">
-              ASSURANCE AUTO
-            </section>
+                <nav id="header-nav" class="flex1 flex row">
+                    <a href="/assurance-auto-moto" class="header-nav-link">Assurance Automobile</a>
+                    <a href="/assurance-habitation" class="header-nav-link">Assurance Habitation</a>
+                    <a href="/assurance-sante-prevoyance" class="header-nav-link">Santé / Prévoyance</a>
+                    <a href="/assurance-professionnels" class="header-nav-link">Professionnels</a>
+                    <a href="/agence-toulouse-centre" class="header-nav-link">L'agence</a>
+                    <a href="/contact" class="header-nav-link">Contact</a>
+                </nav>
+            </div>
+          </header>
+          <section class="page-title-container contact" data-parallax="scroll" data-image-src="assets/img/background-vehicules.jpg" data-position-y="auto">
+            <div class="container">
+                <h1>Assurance automobile, moto</h1>
+            </div>
+          </section>
+          <section class="bg-white">
+            <div class="container row">
+              <div class="content-block flex col flex2">
+                <h2>Vous êtes à la recherche d'une assurance automobile pas cher ?</h2>
+                <p>Quelque soit votre profil <strong>jeune conducteur ou conducteur expérimenté</strong> et la gamme de votre véhicule, nous avons les solutions adaptés à vos attentes.</p>
+                <p>Nous proposons des produits conçus pour les risque aggravés comme:</p>
+                <ul>
+                  <li>La résiliation d'assurance</li>
+                  <li>Sinistres</li>
+                  <li>Annulation/supspension du permis de conduire</li>
+                  <li>Alcoolémie, stupéfiants</li>
+                  <li>Permis étranger</li>
+                  <li>Assurance temporaire (sortie de fourrière immobilisation ou courte durée)</li>
+                </ul>
+              </div>
+              <div class="img-block kflex col flex1">
+                <img src="assets/img/illustration-assurance-vehicules-02.svg" alt="assurance auto moto pas cher">
+              </div> 
+            </div>
+          </section>
+          <section class="call-to-action" data-parallax="scroll" data-image-src="assets/img/background-contact.jpg" >
+            <div class="container">
+              <span class="content">Pour connaître <strong>faire le bon choix</strong> et choisir la protection la plus adaptée à vos besoins, <br/>contactez MM assurances</span>
+              <div class="btn-container">
+                <a href="#" class="btn-orange-gradient">Nous contacter</a>
+              </div>
+            </div>
+          </section>
+          <section>
+            <div class="container row">
+              <div class="img-block kflex col flex1">
+                <img src="assets/img/illustration-assurance-vehicules-03.svg" alt="assurance habitation adaptee" >
+              </div>
+              <div class="content-block flex col flex2">
+                <h2>Nous négocions les tarifs les plus compétitifs pour vous</h2>
+                <p>Vous avez eu des accidents et votre assureur vous a résilié à cause des sinistres? <strong>Vous payez trop cher</strong> à cause de votre malus? </p>
+                <p>Nous vous proposons des <strong>assurances auto au meilleur prix</strong>. Quelles que soient les raisons de votre malus, nous pouvons vous assurer! </p>
+                  
+              </div>
+            </div>
+          </section>
+     
+          <section id="homepage-follow">
+            <div class="container">
+                <h2>Suivez-nous sur les réseaux sociaux</h2>
+                <div class="flex row social-icons-container">
+                    <a href="#" class="homepage-social-icon facebook"></a>
+                    <a href="#" class="homepage-social-icon instagram"></a>
+                    <a href="#" class="homepage-social-icon snapchat"></a>
+                </div>
+            </div>
+          </section>
             <footer class="flex col">
                 <div class="footer-top flex row">
                     <div class="flex row container">

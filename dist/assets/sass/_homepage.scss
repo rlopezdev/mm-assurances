@@ -6,10 +6,10 @@
         z-index: 2;
     }
     padding: 60px 0;
-    background-color: #111;
+    background-color: rgba(0,0,0,0.8);
     position: relative;
     overflow: hidden;
-    &:after{
+    /*&:after{
         content: "";
         display: inline-block;
         position: absolute;
@@ -23,7 +23,7 @@
         background-position: center top;
         @include opacity(0.10);
         z-index:1;
-    }
+    }*/
     h1.headline-title,
     .header-headline{
         display: inline-block;

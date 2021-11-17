@@ -142,7 +142,7 @@ body {
 }
 
 section {
-  padding: 60px 0;
+  padding: 80px 0;
   z-index: 1;
   display: flex;
   flex-direction: row;
@@ -152,38 +152,27 @@ section h2 {
   color: #ce4500;
   padding-bottom: 20px;
 }
+section.bg-white {
+  background-color: #fff;
+}
+section.call-to-action {
+  background: #111111;
+  background: linear-gradient(180deg, #111111 0%, rgba(37, 37, 37, 0.9) 50%, rgba(17, 17, 17, 0.9) 100%);
+}
+section.call-to-action > .container {
+  align-items: center;
+}
 section.page-title-container {
   position: relative;
-  background-color: #ce4500;
+  background-color: rgba(206, 69, 0, 0.8);
   z-index: 1;
-}
-section.page-title-container:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 2;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  /* Netscape */
-  -moz-opacity: 0.14;
-  /* Safari 1.x */
-  -khtml-opacity: 0.14;
-  /* Good browsers */
-  opacity: 0.14;
-}
-section.page-title-container.contact:after {
-  background-image: url("../img/background-contact.jpg");
 }
 section.page-title-container h1 {
   text-align: center;
 }
 
 .btn-container {
-  margin-top: 20px;
+  margin-top: 40px;
 }
 .btn-container .btn-orange-gradient {
   display: inline-block;
@@ -210,7 +199,7 @@ section.page-title-container h1 {
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
   color: #fff;
-  font-size: 16px;
+  font-size: 22px;
   font-weight: 600;
   text-align: center;
   position: relative;
@@ -254,10 +243,26 @@ section.page-title-container h1 {
   transition: all 0.3s ease;
   position: absolute;
   z-index: 2;
-  top: 10px;
+  top: 13px;
   left: 100%;
   margin-left: -30px;
   background-color: #fff;
+}
+
+.call-to-action {
+  position: relative;
+  z-index: 1;
+}
+.call-to-action .content {
+  display: inline-block;
+  font-size: 26px;
+  line-height: 1.5em;
+  font-weight: 800;
+  color: #fff;
+  text-align: center;
+}
+.call-to-action .content strong {
+  color: #ce4500;
 }
 
 h1, h2, h3, h4 {
@@ -282,6 +287,55 @@ h2 {
 h3 {
   font-size: 26px;
   font-weight: 600;
+}
+
+.content-block {
+  justify-content: center;
+  padding: 0 40px;
+}
+.content-block p {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.4em;
+  margin: 10px 0;
+  color: #111;
+}
+.content-block p strong {
+  font-weight: 700;
+}
+.content-block ul {
+  margin: 0;
+  padding: 0;
+}
+.content-block ul li {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 500;
+  width: 100%;
+  padding: 7px 0 7px 20px;
+  position: relative;
+}
+.content-block ul li:before {
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #ce4500;
+  position: absolute;
+  top: 13px;
+  left: 5px;
+}
+
+.img-block {
+  padding: 0 20px;
+}
+.img-block img {
+  display: inline-block;
+  width: 100%;
+  height: auto;
 }
 
 /*** HEADER ***/
@@ -332,32 +386,27 @@ h3 {
 /* Homepage - Headeline */
 #homepage-headline {
   padding: 60px 0;
-  background-color: #111;
+  background-color: rgba(0, 0, 0, 0.8);
   position: relative;
   overflow: hidden;
+  /*&:after{
+      content: "";
+      display: inline-block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url('../img/background-homapge-headline.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center top;
+      @include opacity(0.10);
+      z-index:1;
+  }*/
 }
 #homepage-headline > .container {
   z-index: 2;
-}
-#homepage-headline:after {
-  content: "";
-  display: inline-block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url("../img/background-homapge-headline.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center top;
-  /* Netscape */
-  -moz-opacity: 0.1;
-  /* Safari 1.x */
-  -khtml-opacity: 0.1;
-  /* Good browsers */
-  opacity: 0.1;
-  z-index: 1;
 }
 #homepage-headline h1.headline-title,
 #homepage-headline .header-headline {
@@ -772,7 +821,7 @@ h3 {
   display: inline-block;
   width: 40px;
   height: 40px;
-  background-color: rgba(206, 69, 0, 0.7);
+  background-color: rgba(206, 69, 0, 0.8);
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
@@ -876,7 +925,7 @@ footer .footer-list li a:hover {
   display: inline-block;
   width: 24px;
   height: 24px;
-  background-color: rgba(206, 69, 0, 0.7);
+  background-color: rgba(206, 69, 0, 0.8);
   margin-right: 10px;
 }
 .footer-contact .icon.phone {
