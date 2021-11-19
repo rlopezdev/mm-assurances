@@ -1,0 +1,72 @@
+#forfait-auto{
+  border-collapse: collapse;
+  margin: 40px 0;
+  thead{
+    th{
+      border: 1px solid #ccc;
+      padding: 30px;
+      font-weight: 600;
+      text-align: center;
+      text-transform: uppercase;
+      color: #fff;
+
+      &.garanties{
+        color: $orange;
+        border: none;
+        font-size: 18px;
+        font-weight: 700;
+      }
+      &.essentiel{
+        background-color:rgba(206,69,0,0.6);
+      }
+      &.confort{
+        background-color:rgba(206,69,0,0.8);
+      }
+      &.full{
+        background-color: $orange;
+      }
+    }
+  }tbody{
+    tr{
+      background-color: #fafafa;
+      &:nth-child(2n+1){
+        background-color: #eee;
+      }
+      td{
+        width: 25%;
+        padding: 30px;
+        border: 1px solid #ccc;
+        
+        &.label{
+          font-size: 14px;
+          color: #555555;
+          font-weight: 700;
+        }
+        &.value{
+          text-align: center;
+          vertical-align: center;
+        }
+
+        .array-value{
+          display: inline-block;
+          width: 24px;
+          height: 24px;
+          &.check{
+            background-color: green;
+            @include maskImage('../img/check.svg')
+          } 
+          &.uncheck{
+            background-color: red;
+            @include maskImage('../img/close.svg')
+          }
+        }
+      }
+    }
+  }
+}
+.forfait-contact{
+  text-align:center ;
+  p{
+    font-weight: 600;
+  }
+}

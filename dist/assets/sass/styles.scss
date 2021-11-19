@@ -63,6 +63,9 @@ section{
     &.bg-white{
       background-color: #fff;
     }
+    &.bg-orange{
+      background-color: $orange;
+    }
     &.call-to-action{
       background: rgb(17,17,17);
       background: linear-gradient(180deg, rgba(17,17,17,1) 0%, rgba(37,37,37,0.9) 50%, rgba(17,17,17,0.9) 100%);
@@ -168,8 +171,8 @@ h3{
     strong{
       font-weight: 700;
     }
-   
   }
+
   ul{
     margin: 0;
     padding: 0;
@@ -193,9 +196,16 @@ h3{
       }
     }
   }
+  &.white{
+    p{
+      color: #fff;
+      font-weight: 400;
+    }
+  }
 }
 .img-block{
   padding: 0 20px;
+  justify-content: center;
 
   img{
     display:inline-block;
@@ -205,5 +215,7 @@ h3{
 }
 @import './_header.scss';
 @import './_homepage.scss';
+@import './_assurance-auto.scss';
+@import './_agence.scss';
 @import './_contact.scss';
 @import './_footer.scss';

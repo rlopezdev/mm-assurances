@@ -155,6 +155,9 @@ section h2 {
 section.bg-white {
   background-color: #fff;
 }
+section.bg-orange {
+  background-color: #ce4500;
+}
 section.call-to-action {
   background: #111111;
   background: linear-gradient(180deg, #111111 0%, rgba(37, 37, 37, 0.9) 50%, rgba(17, 17, 17, 0.9) 100%);
@@ -328,9 +331,14 @@ h3 {
   top: 13px;
   left: 5px;
 }
+.content-block.white p {
+  color: #fff;
+  font-weight: 400;
+}
 
 .img-block {
   padding: 0 20px;
+  justify-content: center;
 }
 .img-block img {
   display: inline-block;
@@ -701,6 +709,94 @@ h3 {
   -webkit-mask-size: cover;
   mask-repeat: no-repeat;
   -webkit-mask-repeat: no-repeat;
+}
+
+#forfait-auto {
+  border-collapse: collapse;
+  margin: 40px 0;
+}
+#forfait-auto thead th {
+  border: 1px solid #ccc;
+  padding: 30px;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+}
+#forfait-auto thead th.garanties {
+  color: #ce4500;
+  border: none;
+  font-size: 18px;
+  font-weight: 700;
+}
+#forfait-auto thead th.essentiel {
+  background-color: rgba(206, 69, 0, 0.6);
+}
+#forfait-auto thead th.confort {
+  background-color: rgba(206, 69, 0, 0.8);
+}
+#forfait-auto thead th.full {
+  background-color: #ce4500;
+}
+#forfait-auto tbody tr {
+  background-color: #fafafa;
+}
+#forfait-auto tbody tr:nth-child(2n+1) {
+  background-color: #eee;
+}
+#forfait-auto tbody tr td {
+  width: 25%;
+  padding: 30px;
+  border: 1px solid #ccc;
+}
+#forfait-auto tbody tr td.label {
+  font-size: 14px;
+  color: #555555;
+  font-weight: 700;
+}
+#forfait-auto tbody tr td.value {
+  text-align: center;
+  vertical-align: center;
+}
+#forfait-auto tbody tr td .array-value {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+}
+#forfait-auto tbody tr td .array-value.check {
+  background-color: green;
+  mask-image: url("../img/check.svg");
+  -webkit-mask-image: url("../img/check.svg");
+  mask-size: cover;
+  -webkit-mask-size: cover;
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+}
+#forfait-auto tbody tr td .array-value.uncheck {
+  background-color: red;
+  mask-image: url("../img/close.svg");
+  -webkit-mask-image: url("../img/close.svg");
+  mask-size: cover;
+  -webkit-mask-size: cover;
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+}
+
+.forfait-contact {
+  text-align: center;
+}
+.forfait-contact p {
+  font-weight: 600;
+}
+
+.member-item {
+  padding: 20px 40px;
+}
+.member-item h3 {
+  text-align: center;
+}
+.member-item p {
+  text-align: justify;
 }
 
 #contact {
