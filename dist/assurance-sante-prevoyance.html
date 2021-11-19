@@ -5,7 +5,7 @@
         <title>MM Assurances - Santé et prévoyance, animeaux</title>
         <!-- JS -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+        <script src="assets/js/bxslider.min.js"></script>
         <script src="assets/js/parallax.min.js"></script>
 
         <!-- CSS -->
@@ -57,7 +57,7 @@
           <div class="container">
             <span class="content">Pour <strong>faire le bon choix</strong> et choisir la protection la plus adaptée à vos besoins, <br/>contactez MM assurances</span>
             <div class="btn-container">
-              <a href="#" class="btn-orange-gradient">Nous contacter</a>
+              <a href="/contact" class="btn-orange-gradient">Nous contacter</a>
             </div>
           </div>
         </section>
@@ -84,35 +84,35 @@
             </div>
           </div>
         </section>
-        <section id="homepage-follow">
+        <section id="homepage-follow" data-parallax="scroll" data-image-src="assets/img/background-homapge-social.jpg">
           <div class="container">
               <h2>Suivez-nous sur les réseaux sociaux</h2>
               <div class="flex row social-icons-container">
-                  <a href="#" class="homepage-social-icon facebook"></a>
-                  <a href="#" class="homepage-social-icon instagram"></a>
+                  <a href="https://www.facebook.com/MM-Assurances-102119438720098" target="_blank" class="homepage-social-icon facebook"></a>
+                  <a href="https://www.instagram.com/mm.assurances/" class="homepage-social-icon instagram"></a>
                   <a href="#" class="homepage-social-icon snapchat"></a>
               </div>
           </div>
         </section>
-        
+        <!-- FOOTER -->
         <footer class="flex col">
           <div class="footer-top flex row">
               <div class="container row">
                   <div class="footer-top-part flex1 flex col">
                       <h3 class="footer-title">Assurances</h3>
                       <ul class="footer-list">
-                          <li><a href="#">Assurances Véhicules</a></li>
-                          <li><a href="#">Assurances Logement</a></li>
-                          <li><a href="#">Prévoyance / Santé</a></li>
-                          <li><a href="#">Professionnels</a></li>
+                          <li><a href="/assurance-auto-moto">Assurances Véhicules</a></li>
+                          <li><a href="/assurance-habitation">Assurances Habitation</a></li>
+                          <li><a href="/assurance-sante-prevoyanc">Prévoyance / Santé</a></li>
+                          <li><a href="/assurance-professionnels">Professionnels</a></li>
                       </ul>
                   </div>
                   <div class="footer-top-part flex1 flex col">
                       <h3 class="footer-title">MM Assurances</h3>
                       <ul class="footer-list">
-                          <li><a href="#" >Notre Agence à Toulouse</a></li>
-                          <li><a href="#" target="_blank">Nous suivre sur Facebook</a></li>
-                          <li><a href="#" target="_blank">Nous suivre sur Instagram</a></li>
+                          <li><a href="/agence-toulouse-centre" >Notre Agence à Toulouse</a></li>
+                          <li><a href="https://www.facebook.com/MM-Assurances-102119438720098" target="_blank">Nous suivre sur Facebook</a></li>
+                          <li><a href="https://www.instagram.com/mm.assurances/" target="_blank">Nous suivre sur Instagram</a></li>
                           <li><a href="#" target="_blank">Nous suivre sur Snapchat</a></li>
                       </ul>
                   </div>
@@ -120,7 +120,7 @@
                       <h3 class="footer-title">Nous contacter</h3>
                       <div class="flex row footer-contact">
                           <span class="icon phone"></span> 
-                          <a href="#" target="_blank" class="footer-contact-link">05 34 56 09 24</a>
+                          <a href="tel:+33534560924" target="_blank" class="footer-contact-link">05 34 56 09 24</a>
                       </div>
                       <div class="flex row footer-contact">
                           <span class="icon mail"></span>
@@ -128,20 +128,20 @@
                       </div>
                       <div class="flex row footer-contact">
                           <span class="icon address"></span>
-                          <a href="#" target="_blank" class="footer-contact-link">8 Av. de Lombez, 31300 Toulouse</a>
+                          <a href="https://www.google.fr/maps/place/8+Av.+de+Lombez,+31300+Toulouse/@43.5964174,1.4200031,17z/data=!3m1!4b1!4m5!3m4!1s0x12aebb0cf31827ab:0x59ddf94d711da4be!8m2!3d43.5964135!4d1.4221918" target="_blank" class="footer-contact-link">8 Av. de Lombez, 31300 Toulouse</a>
                       </div>
                   </div>
                   <div class="footer-top-part logo flex1 flex col">
-                      <img class="footer-logo" src="assets/img/mm-assurances-logo-white.svg" alt="logo MM Assurances">
+                      <a href="/"><img class="footer-logo" src="assets/img/mm-assurances-logo-white.svg" alt="logo MM Assurances"></a>
                   </div>
               </div>
           </div>
           <div class="footer-bottom flex row">
-              <div class="container">
-                  <span class="flex row">Copyright MM Assurances 2021 - Mentions Légales - Conditions Générales de Ventes</span>
-              </div>
+            <div class="container">
+              <span class="flex row">Copyright MM Assurances 2021 - Mentions Légales - Conditions Générales de Ventes</span>
+            </div>
           </div>
       </footer>
-      </div>
+    </div>
   </body>
 </html>

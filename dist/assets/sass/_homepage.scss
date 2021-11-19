@@ -214,27 +214,12 @@
  
 /* Homepage réseaux sociaux */
 #homepage-follow{
-    background-color: $orange;
+    background-color: rgba(206, 69, 0, 0.8);
     position: relative;
-    overflow: hidden;
+    z-index: 1;
+
     &>.container{
         align-items: center;
-        z-index: 2;
-    }
-    &:after{
-        content: "";
-        display: inline-block;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-image: url('../img/background-homapge-social.jpg');
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center center;
-        @include opacity(0.10);
-        z-index:1;
     }
     h2{
         color: #fff;
