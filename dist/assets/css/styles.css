@@ -155,9 +155,6 @@ section h2 {
 section.bg-white {
   background-color: #fff;
 }
-section.bg-orange {
-  background-color: #ce4500;
-}
 section.call-to-action {
   background: #111111;
   background: linear-gradient(180deg, #111111 0%, rgba(37, 37, 37, 0.9) 50%, rgba(17, 17, 17, 0.9) 100%);
@@ -268,7 +265,10 @@ section.page-title-container h1 {
   color: #ce4500;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   display: inline-block;
   width: 100%;
 }
@@ -305,6 +305,12 @@ h3 {
 }
 .content-block p strong {
   font-weight: 700;
+}
+.content-block p a {
+  color: #ce4500;
+}
+.content-block p a:hover {
+  text-decoration: underline;
 }
 .content-block ul {
   margin: 0;
