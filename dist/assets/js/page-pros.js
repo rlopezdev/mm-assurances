@@ -1,5 +1,5 @@
 $(document).ready(() => {
-    $('#call-to-action').parallax({
+    $('.call-to-action').parallax({
         imageSrc: 'assets/img/background-logo.jpg',
         positionY: 'auto'
     });
