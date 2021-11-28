@@ -95,7 +95,8 @@ section {
 }
 
 .btn-container {
-    margin-top: 40px;
+    margin-top: 20px;
+    align-items: center;
     .btn-orange-gradient {
         display: inline-block;
         padding: 15px 15px;
@@ -106,8 +107,10 @@ section {
         color: #fff;
         font-size: 22px;
         font-weight: 600;
+        height: 30px;
         text-align: center;
         position: relative;
+        line-height: 30px;
         &:after {
             display: none;
             margin-left: 0;
@@ -179,6 +182,7 @@ h3 {
 
 .content-block {
     justify-content: center;
+    align-items: center;
     padding: 0 40px;
     p {
         font-size: 18px;
@@ -225,7 +229,7 @@ h3 {
         font-size: 18px;
         font-weight: 500;
         line-height: 1.4em;
-        margin: 10px 0;
+        margin: 20px 0;
         background-color: rgba(206, 69, 0, 0.1);
     }
     a {
@@ -239,10 +243,31 @@ h3 {
 .img-block {
     padding: 0 20px;
     justify-content: center;
+    align-items: center;
     img {
         display: inline-block;
         width: 100%;
         height: auto;
+        max-width: 500px;
+    }
+}
+
+.price {
+    display: inline-block;
+    padding: 20px;
+    width: 90px;
+    height: 90px;
+    margin: 0 20px;
+    @include borderRadius(80px);
+    background-color: $orange;
+    text-align: center;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 40px;
+    strong {
+        font-size: 24px;
+        font-weight: 800;
     }
 }
 

@@ -11,11 +11,44 @@
 }
 
 @media screen and (max-width: 1024px) {
+    h1 {
+        font-size: 32px;
+    }
+    h2 {
+        font-size: 28px;
+        font-weight: 600;
+    }
+    h3 {
+        font-size: 24px;
+        font-weight: 600;
+    }
+    .container {
+        max-width: 100%;
+        flex-wrap: wrap;
+    }
     #header-nav {
         display: none;
     }
     #burger-nav {
         display: flex;
+    }
+    /* Homepage */
+    #homepage-headline {
+        h1.headline-title,
+        .header-headline {
+            font-size: 32px;
+        }
+    }
+    .container {
+        &.row {
+            .content-block {
+                flex: 1 1 600px;
+                margin: 20px 0;
+            }
+            .img-block {
+                flex: 1 1 300px;
+            }
+        }
     }
 }
 

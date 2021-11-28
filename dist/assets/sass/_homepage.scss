@@ -21,6 +21,7 @@
         font-weight: 800;
         text-transform: uppercase;
         text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.3);
+        line-height: 1.5em;
         strong {
             color: $orange;
         }
@@ -28,11 +29,13 @@
 }
 
 .headline-links {
-    margin: 60px 0;
+    margin: 40px 0;
+    flex-wrap: wrap;
     .headline-link-container {
         align-items: center;
         justify-content: center;
         padding: 0 20px;
+        margin: 20px 0;
         .headline-link {
             padding: 10px 15px;
             @include borderRadius(5px);
@@ -107,10 +110,15 @@
     padding: 20px 0;
 }
 
+.homepage-services-icons {
+    flex-wrap: wrap;
+}
+
 .services-icon-container {
     padding: 20px;
     align-items: center;
     justify-content: center;
+    margin: 20px 0;
     .icon {
         display: inline-block;
         width: 80px;
@@ -130,19 +138,6 @@
     }
 }
 
-.price {
-    display: inline-block;
-    padding: 10px;
-    @include borderRadius(10px);
-    background-color: green;
-    width: 200px;
-    text-align: center;
-    margin: 10px 0;
-    color: #fff;
-    font-size: 18px;
-    font-weight: 600;
-}
-
 
 /* Homepage Slider */
 
@@ -152,6 +147,9 @@
     @include boxShadow(0, 0, 8px, 0, rgba(0, 0, 0, 0.3));
     padding: 0;
     height: auto;
+    .container {
+        flex-wrap: nowrap;
+    }
 }
 
 #homepage-slider {
@@ -172,12 +170,13 @@
     justify-content: center;
     h2 {
         color: $orange;
-        padding: 20px 0;
+        padding: 20px 0 0 0;
     }
     p {
         display: inline-block;
         font-size: 18px;
-        line-height: 24px;
+        line-height: 1.5em;
+        padding: 20px;
         font-weight: 500;
     }
 }

@@ -38,6 +38,9 @@
         &:hover {
             color: $orange;
         }
+        &.active {
+            color: $orange;
+        }
     }
 }
 
@@ -49,11 +52,16 @@
     #burger-nav-btn {
         height: 40px;
         width: 40px;
+        @include transitionEase();
+        background-color: #111;
         &.closed {
-            background: red;
+            @include maskImage('../img/burger-menu.svg');
         }
         &.open {
-            background: green;
+            @include maskImage('../img/close-burger-menu.svg');
+        }
+        &:hover {
+            background-color: $orange;
         }
     }
     #burger-nav-list {
@@ -92,11 +100,8 @@
                 color: #fff;
             }
             &.active {
-                &,
-                a:hover {
-                    color: $orange;
-                    background-color: #fff;
-                }
+                color: $orange;
+                background-color: #fff;
             }
         }
     }
