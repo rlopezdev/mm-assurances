@@ -79,7 +79,7 @@ section {
     }
     &.call-to-action {
         background: rgb(17, 17, 17);
-        background: linear-gradient(180deg, rgba(17, 17, 17, 1) 0%, rgba(37, 37, 37, 0.9) 50%, rgba(17, 17, 17, 0.9) 100%);
+        background: linear-gradient(180deg, rgba(40, 40, 40, 1) 0%, rgba(60, 60, 60, 0.9) 50%, rgba(17, 17, 17, 0.9) 100%);
         &>.container {
             align-items: center;
         }
@@ -189,12 +189,6 @@ h3 {
         strong {
             font-weight: 700;
         }
-        a {
-            color: $orange;
-            &:hover {
-                text-decoration: underline;
-            }
-        }
     }
     ul {
         margin: 0;
@@ -223,6 +217,21 @@ h3 {
         p {
             color: #fff;
             font-weight: 400;
+        }
+    }
+    .highlight {
+        padding: 20px;
+        border: 1px solid $orange;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 1.4em;
+        margin: 10px 0;
+        background-color: rgba(206, 69, 0, 0.1);
+    }
+    a {
+        color: $orange;
+        &:hover {
+            text-decoration: underline;
         }
     }
 }

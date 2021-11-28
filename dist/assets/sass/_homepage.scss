@@ -130,6 +130,19 @@
     }
 }
 
+.price {
+    display: inline-block;
+    padding: 10px;
+    @include borderRadius(10px);
+    background-color: green;
+    width: 200px;
+    text-align: center;
+    margin: 10px 0;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+}
+
 
 /* Homepage Slider */
 
