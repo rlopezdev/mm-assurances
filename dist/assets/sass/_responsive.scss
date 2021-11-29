@@ -52,9 +52,36 @@
     }
 }
 
-@media screen and (max-width: 960px) {}
+@media screen and (max-width: 960px) {
+    #forfait-auto {
+        thead {
+            th {
+                &,
+                &.garanties {
+                    font-size: 14px;
+                }
+                padding: 10px;
+            }
+        }
+        tbody {
+            tr {
+                td {
+                    padding: 15px;
+                }
+            }
+        }
+    }
+}
 
-@media screen and (max-width: 840px) {}
+@media screen and (max-width: 840px) {
+    #contact {
+        .container {
+            &>div {
+                flex: 1 1 600px;
+            }
+        }
+    }
+}
 
 @media screen and (max-width: 600px) {}
 

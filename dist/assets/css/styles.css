@@ -822,6 +822,7 @@ h3 {
   text-align: center;
   text-transform: uppercase;
   color: #fff;
+  vertical-align: center;
 }
 #forfait-auto thead th.garanties {
   color: #ce4500;
@@ -848,6 +849,7 @@ h3 {
   width: 25%;
   padding: 20px;
   border: 1px solid #ccc;
+  vertical-align: middle;
 }
 #forfait-auto tbody tr td.label {
   font-size: 14px;
@@ -1051,6 +1053,19 @@ h3 {
   background-color: #ce4500;
 }
 
+#cgv h1 {
+  color: #ce4500;
+  margin-bottom: 30px;
+}
+#cgv h2 {
+  font-size: 24px;
+  margin: 10px 0;
+}
+#cgv p {
+  font-size: 16px;
+  margin: 10px 0 20px 0;
+}
+
 /*** FOOTER ***/
 footer {
   padding: 0;
@@ -1169,6 +1184,14 @@ footer .footer-list li a:hover {
 }
 .footer-bottom .container {
   align-items: center;
+}
+.footer-bottom a {
+  color: #ccc;
+  text-decoration: none;
+  padding: 0 2px;
+}
+.footer-bottom a:hover {
+  text-decoration: underline;
 }
 
 .splide__container {
@@ -1542,6 +1565,22 @@ footer .footer-list li a:hover {
   }
   .container.row .img-block {
     flex: 1 1 300px;
+  }
+}
+@media screen and (max-width: 960px) {
+  #forfait-auto thead th {
+    padding: 10px;
+  }
+  #forfait-auto thead th, #forfait-auto thead th.garanties {
+    font-size: 14px;
+  }
+  #forfait-auto tbody tr td {
+    padding: 15px;
+  }
+}
+@media screen and (max-width: 840px) {
+  #contact .container > div {
+    flex: 1 1 600px;
   }
 }
 

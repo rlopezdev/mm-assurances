@@ -16,6 +16,7 @@
             text-align: center;
             text-transform: uppercase;
             color: #fff;
+            vertical-align: center;
             &.garanties {
                 color: $orange;
                 border: none;
@@ -43,6 +44,7 @@
                 width: 25%;
                 padding: 20px;
                 border: 1px solid #ccc;
+                vertical-align: middle;
                 &.label {
                     font-size: 14px;
                     color: #555555;

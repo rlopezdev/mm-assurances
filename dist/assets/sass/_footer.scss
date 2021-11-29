@@ -100,4 +100,12 @@ footer {
     .container {
         align-items: center;
     }
+    a {
+        color: #ccc;
+        text-decoration: none;
+        padding: 0 2px;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
 }
