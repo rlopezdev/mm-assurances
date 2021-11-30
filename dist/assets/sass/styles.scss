@@ -185,6 +185,7 @@ h3 {
     align-items: center;
     padding: 0 40px;
     p {
+        width: 100%;
         font-size: 18px;
         font-weight: 500;
         line-height: 1.4em;
@@ -269,6 +270,22 @@ h3 {
         font-size: 24px;
         font-weight: 800;
     }
+}
+
+.cc-nb-main-container {
+    padding: 10px !important;
+}
+
+.termsfeed-com---nb-headline {
+    position: fixed !important;
+    bottom: 0 !important;
+    left: 0 !important;
+}
+
+.cc-nb-okagree,
+.cc-cp-foot-save {
+    background-color: $orange !important;
+    color: #fff !important;
 }
 
 @import './_header.scss';
