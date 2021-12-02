@@ -81,6 +81,18 @@
             }
         }
     }
+    .homepage-slide-img {
+        display: none;
+    }
+    .homepage-slide-content {
+        .btn-container {
+            display: flex;
+            flex-direction: column;
+        }
+        .price {
+            margin-bottom: 10px;
+        }
+    }
 }
 
 @media screen and (max-width: 600px) {}

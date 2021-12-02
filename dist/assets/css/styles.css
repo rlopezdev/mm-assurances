@@ -164,7 +164,7 @@ section.call-to-action > .container {
 }
 section.page-title-container {
   position: relative;
-  background-color: rgba(206, 69, 0, 0.8);
+  background-color: transparent;
   z-index: 1;
 }
 section.page-title-container h1 {
@@ -529,7 +529,7 @@ h3 {
 /* Homepage - Headeline */
 #homepage-headline {
   padding: 60px 0;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: transparent;
   position: relative;
   overflow: hidden;
 }
@@ -771,7 +771,7 @@ h3 {
 
 /* Homepage réseaux sociaux */
 #follow-block {
-  background-color: rgba(206, 69, 0, 0.8);
+  background-color: transparent;
   position: relative;
   z-index: 1;
 }
@@ -1593,6 +1593,18 @@ footer .footer-list li a:hover {
 @media screen and (max-width: 840px) {
   #contact .container > div {
     flex: 1 1 600px;
+  }
+
+  .homepage-slide-img {
+    display: none;
+  }
+
+  .homepage-slide-content .btn-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .homepage-slide-content .price {
+    margin-bottom: 10px;
   }
 }
 
