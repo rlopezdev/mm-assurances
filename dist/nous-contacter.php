@@ -3,9 +3,18 @@
 
 <head>
     <meta charset="utf-8">
-    <title>MM Assurances - Professionnels</title>
+    <title>MM Assurances | Nous contacter à Toulouse</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="MM Assurances à toulouse, conditions générales de vente.">
+    <meta name="description" content="Contactez vos conseillers de l'agence MM Assurances à Toulouse. Appelez nous au 0534560921, par email ou en remplissant le formulaire de contact. Rendez nous visite au 8 avenue de Lombez, 31300, Toulouse. Agence de Toulouse centre.">
+    <meta name="keywords" content="assurance, courtage, assurance pas cher, professionnels, contacter, coordonnées" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://mmassurances-toulouse.fr" />
+    <meta property="og:site_name" content="MM Assurances - Toulouse centre" />
+    <meta property="og:title" content=">MM Assurances | Nous contacter à Toulouse" />
+    <meta property="og:description" content="Contactez vos conseillers de l'agence MM Assurances à Toulouse. Appelez nous au 0534560921, par email ou en remplissant le formulaire de contact. Rendez nous visite au 8 avenue de Lombez, 31300, Toulouse. Agence de Toulouse centre."
+    />
+    <meta property="og:image" content="assets/img/mm-assurances-logo.svg" />
     <meta property="og:image" content="assets/img/mm-assurances-logo.svg" />
     <link rel="apple-touch-icon" sizes="57x57" href="assets/img/favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="assets/img/favicon/apple-icon-60x60.png">
@@ -27,7 +36,9 @@
 
     <!-- JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="assets/js/cgv.js" type="text/javascript"></script>
+    <script src="assets/js/parallax.min.js"></script>
+    <script src="assets/js/contact.js"></script>
+
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
 
@@ -35,6 +46,7 @@
 
 <body>
     <div id="app">
+        <!-- HEADER -->
         <header id="header" class="flex row">
             <div class="container row">
                 <div class="logo-container">
@@ -47,9 +59,9 @@
                     <a href="/assurance-auto-moto" class="header-nav-link">Assurance Automobile</a>
                     <a href="/assurance-habitation" class="header-nav-link">Assurance Habitation</a>
                     <a href="/assurance-sante-prevoyance" class="header-nav-link">Santé / Prévoyance</a>
-                    <a href="/assurance-professionnels" class="header-nav-link active">Professionnels</a>
+                    <a href="/assurance-professionnels" class="header-nav-link">Professionnels</a>
                     <a href="/agence-toulouse-centre" class="header-nav-link">L'agence</a>
-                    <a href="/nous-contacter" class="header-nav-link">Contact</a>
+                    <a href="/nous-contacter" class="header-nav-link active">Contact</a>
                 </nav>
                 <nav id="burger-nav" class="flex1 flex row">
                     <button id="burger-nav-btn" class="closed"></button>
@@ -58,47 +70,88 @@
                         <a href="/assurance-auto-moto" class="header-nav-link">Assurance Automobile</a>
                         <a href="/assurance-habitation" class="header-nav-link">Assurance Habitation</a>
                         <a href="/assurance-sante-prevoyance" class="header-nav-link">Santé / Prévoyance</a>
-                        <a href="/assurance-professionnels" class="header-nav-link active">Professionnels</a>
+                        <a href="/assurance-professionnels" class="header-nav-link">Professionnels</a>
                         <a href="/agence-toulouse-centre" class="header-nav-link">L'agence</a>
-                        <a href="/nous-contacter" class="header-nav-link">Contact</a>
+                        <a href="/nous-contacter" class="header-nav-link active">Contact</a>
                     </div>
                 </nav>
             </div>
         </header>
-        <section id="cgv">
+        <!-- BODY -->
+        <section class="page-title-container contact">
             <div class="container">
-                <div class="content-block flex col">
-                    <h1>Condition générales de vente</h1>
-                    <p>L’objet des présentes Conditions Générales est de définir les conditions d’accès et d’utilisation du site internet de la société MM ASSURANCES, accessible aux adresses suivantes : https://mmassurances-toulouse.fr , ci-après également
-                        dénommé le « Site Internet ». L’accès et l’utilisation du Site Internet impliquent que l’internaute, également appelé « l’Utilisateur », accepte tacitement, complètement, et sans réserve les présentes Conditions Générales dans
-                        leur dernière version mise en ligne.
-                    </p>
-                    <h2>Objectifs, nature de l’information et responsabilité</h2>
-                    <p>Le Site Internet a pour objectif de procurer une information aux Utilisateurs sur la nature de l’activité et des services proposés par la société MM ASSURANCES. La société MM Assurances s’efforce de mettre à la disposition des internautes
-                        un Site Internet exempt de dysfonctionnements et comprenant une information actualisée et de qualité. Pour autant, les informations publiées sur le Site Internet n’ont pas un caractère pré-contractuel, et la société MM Assurances
-                        ne fournit aucune garantie relative à la continuité de la mise en ligne du Site Internet ou à son bon fonctionnement, à l’exactitude et à l’exhaustivité de l’information diffusée, et à ce titre, décline toute responsabilité pour
-                        tous les dommages subis par les Utilisateurs ou les tiers, directs ou indirects, matériels ou immatériels, consécutifs ou en lien avec les informations publiées sur le Site Internet ou avec la navigation sur le Site Internet.</p>
-
-                    <h2>Réclamation</h2>
-                    <p>Vos demandes sont à adresser à : <br/> MM Assurances – Service Relation Clientèle<br/> 8, avenue de lombez 31300 Toulouse<br/> Si notre réponse ne vous satisfait pas, vous pouvez faire appel au service réclamation de l’assureur dont
-                        les coordonnées figurent dans les Dispositions Générales.<br/> Si votre litige ne trouve pas sa solution auprès de l’assureur, vous pouvez vous adresser au médiateur indépendant dont les coordonnées sont les suivantes : <a href="www.mediation-assurance.org"
-                            target="_blank">www.mediation-assurance.org</a><br/> La Médiation de l’Assurance – TSA 50110 – 75441 Paris Cedex 09
-                    </p>
-
-                    <h2>Données personnelles</h2>
-                    <p>Les informations recueillies font l’objet d’un traitement informatique destiné à répondre à vos demandes d’informations, à des fins de prospection et gestion commerciales. Conformément à la loi « informatique et libertés » du 6 janvier
-                        1978 modifiée en 2004, vous bénéficiez d’un droit d’accès et de rectification aux informations qui vous concernent, que vous pouvez exercer en adressant un courrier auprès de MM Assurances.
-                    </p>
-                    <h2>Propriété intellectuelle</h2>
-                    <p>L’intégralité des contenus reproduits sur le Site Internet (textes, images, logos, affiches, marques, fichiers, développements logiciels, photos, vidéos, etc.), ci-après également dénommés les « Contenus » sont protégés par le droit
-                        de la propriété intellectuelle conformément à la législation et la réglementation en vigueur, et notamment par le droit d’auteur, les droits voisins, le droit des marques et la protection sui generis des bases de données.Il est
-                        donc formellement interdit de reproduire, d’exploiter et de diffuser, même partiellement, les Contenus du Site Internet sans l’autorisation expresse de leur auteur, conformément aux dispositions du Code de la propriété intellectuelle.
-                        En cas contraire, la personne qui contrevient à ces dispositions pourrait se rendre coupable de contrefaçon, et à ce titre, être passible de poursuites judiciaires, tant sur le plan civil que sur le plan pénal.Certaines reproductions
-                        sont toutefois autorisées en vertu des exceptions légales prévues à l’article L122-5 du Code de la propriété intellectuelle.</p>
+                <h1>Contacter MM Assurances - Toulouse</h1>
+            </div>
+        </section>
+        <section id="contact">
+            <div class="container flex row">
+                <div class="contact-form flex col flex1">
+                    <h3>Formulaire de contact</h3>
+                    <form id="form-contact" method="post" action="requires/sendContact.php">
+                        <div class="flex col form-field">
+                            <span class="label">Prénom Nom<i>*</i></span>
+                            <input type="text" id="contact-name" name="contact-name">
+                            <span class="form-error hidden" id="contact-name-error"></span>
+                        </div>
+                        <div class="flex col form-field">
+                            <span class="label">Email<i>*</i></span>
+                            <input type="text" id="contact-email" name="contact-email">
+                            <span class="form-error hidden" id="contact-email-error"></span>
+                        </div>
+                        <div class="flex col form-field">
+                            <span class="label">Téléphone</span>
+                            <input type="text" id="contact-phone" name="contact-phone">
+                            <span class="form-error " id="contact-phone-error"></span>
+                        </div>
+                        <div class="flex col form-field">
+                            <span class="label">Message<i>*</i></span>
+                            <textarea id="contact-msg" name="contact-msg"></textarea>
+                            <span class="form-error hidden" id="contact-msg-error"></span>
+                        </div>
+                    </form>
+                    <div class="flex col form-field">
+                        <button id="contact-submit">Envoyer</button>
+                    </div>
+                    <?php 
+                    /*if(isset($_GET['success'])) {
+                      echo('<span class="contact-form-resp success">Message envoyé avec succès !</span>');
+                    } 
+                    if(isset($_GET['error'])) {
+                      echo('Erreur à l\'envoie du message, veuillez rééssayer ultérieurement ou nous contacter par téléphone.');
+                    } */ ?>
+                </div>
+                <div class="flex col flex1">
+                    <h3>Agence de toulouse centre</h3>
+                    <div class="contact-coord-item">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2889.4861994548432!2d1.420003115703821!3d43.59641736411839!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12aebb0cf31827ab%3A0x59ddf94d711da4be!2s8%20Av.%20de%20Lombez%2C%2031300%20Toulouse!5e0!3m2!1sfr!2sfr!4v1635759478201!5m2!1sfr!2sfr"
+                            width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+                <div class="flex col flex1">
+                    <h3>Coordonnées</h3>
+                    <div class="contact-coord-item">
+                        <span class="label">Téléphone</span>
+                        <a href="tel:+33534560921" target="_blank" class="contact-coord">05 34 56 09 21</a>
+                    </div>
+                    <div class="contact-coord-item">
+                        <span class="label">Email</span>
+                        <a href="mmassurances.courtage@gmail.com" class="contact-coord" target="_blank">mmassurances.courtage@gmail.com</a>
+                    </div>
+                    <div class="contact-coord-item">
+                        <span class="label">Addresse</span>
+                        <a href="https://www.google.fr/maps/place/MM+ASSURANCES+TOULOUSE+PATTE+D'OIE/@43.5964135,1.4134371,15z/data=!4m13!1m7!3m6!1s0x12aebb0cf31827ab:0x59ddf94d711da4be!2s8+Av.+de+Lombez,+31300+Toulouse!3b1!8m2!3d43.5964135!4d1.4221918!3m4!1s0x12aebb174d258c9b:0x7a0ae8701b666035!8m2!3d43.5964135!4d1.4221918"
+                            target="_blank" class="contact-coord">8 Av. de Lombez, 31300 Toulouse</a>
+                    </div>
+                    <div class="contact-coord-item">
+                        <span class="label">Réseaux sociaux</span>
+                        <div class="flex row coord-social">
+                            <a href="#" class="coord-social-link"><span class="icon facebook"></span></a>
+                            <a href="#" class="coord-social-link"><span class="icon instagram"></span></a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
-
         <!-- FOOTER -->
         <footer class="flex col">
             <div class="footer-top flex row">
@@ -148,7 +201,7 @@
                 </div>
             </div>
         </footer>
-        <!-- Cookie Consent by https://www.TermsFeed.com 
+         <!-- Cookie Consent by https://www.TermsFeed.com 
         <script type="text/javascript" src="https://www.termsfeed.com/public/cookie-consent/4.0.0/cookie-consent.js" charset="UTF-8"></script>
         <script type="text/javascript" charset="UTF-8">
             document.addEventListener('DOMContentLoaded', function() {

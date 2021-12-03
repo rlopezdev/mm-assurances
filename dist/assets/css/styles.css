@@ -361,7 +361,7 @@ h3 {
   display: inline-block;
   width: 100%;
   height: auto;
-  max-width: 500px;
+  max-width: 400px;
 }
 
 .price {
@@ -903,14 +903,18 @@ h3 {
   font-weight: 600;
 }
 
-.member-item {
+.member-item-container {
+  flex-wrap: wrap;
+}
+.member-item-container .member-item {
+  flex: 1 1 320px;
   padding: 20px 40px;
 }
-.member-item h3 {
+.member-item-container .member-item h3 {
   text-align: center;
 }
-.member-item p {
-  text-align: justify;
+.member-item-container .member-item p {
+  text-align: center;
 }
 
 #contact {
@@ -1063,6 +1067,25 @@ h3 {
 }
 .contact-coord-item .coord-social .coord-social-link:hover .icon {
   background-color: #ce4500;
+}
+
+.contact-form-resp {
+  display: inline-block;
+  width: 100%;
+  padding: 10px 0;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  margin: 10px 0;
+  text-align: center;
+  background-color: red;
+  color: #fff;
+}
+.contact-form-resp.success {
+  background-color: #00973c;
+}
+.contact-form-resp.error {
+  background-color: #bf0000;
 }
 
 #cgv h1 {
@@ -1536,14 +1559,13 @@ footer .footer-list li a:hover {
   .container {
     max-width: 980px;
   }
-}
-@media screen and (max-width: 1024px) {
+
   h1 {
-    font-size: 32px;
+    font-size: 30px;
   }
 
   h2 {
-    font-size: 28px;
+    font-size: 26px;
     font-weight: 600;
   }
 
@@ -1552,6 +1574,45 @@ footer .footer-list li a:hover {
     font-weight: 600;
   }
 
+  .call-to-action .content {
+    font-size: 18px;
+  }
+
+  .content-block {
+    padding: 0 20px;
+  }
+  .content-block p {
+    font-size: 16px;
+  }
+  .content-block ul li {
+    font-size: 16px;
+  }
+  .content-block .highlight {
+    font-size: 16px;
+  }
+
+  .container.row .content-block {
+    flex: 1 1 600px;
+    margin: 20px 0;
+  }
+  .container.row .img-block {
+    flex: 1 1 300px;
+  }
+
+  section {
+    padding: 40px 0;
+  }
+
+  #follow-block .social-icons-container .homepage-social-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .footer-contact .footer-contact-link {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 1024px) {
   .container {
     max-width: 100%;
     flex-wrap: wrap;
@@ -1568,26 +1629,39 @@ footer .footer-list li a:hover {
   /* Homepage */
   #homepage-headline h1.headline-title,
 #homepage-headline .header-headline {
-    font-size: 32px;
+    font-size: 28px;
   }
 
-  .container.row .content-block {
-    flex: 1 1 600px;
-    margin: 20px 0;
-  }
-  .container.row .img-block {
-    flex: 1 1 300px;
+  .headline-links .headline-link-container {
+    margin: 10px auto;
   }
 }
 @media screen and (max-width: 960px) {
+  h1 {
+    font-size: 26px;
+  }
+
+  h2 {
+    font-size: 24px;
+    font-weight: 600;
+  }
+
+  h3 {
+    font-size: 20px;
+    font-weight: 600;
+  }
+
   #forfait-auto thead th {
     padding: 10px;
   }
   #forfait-auto thead th, #forfait-auto thead th.garanties {
-    font-size: 14px;
+    font-size: 12px;
   }
   #forfait-auto tbody tr td {
     padding: 15px;
+  }
+  #forfait-auto tbody tr td.label {
+    font-size: 12px;
   }
 }
 @media screen and (max-width: 840px) {

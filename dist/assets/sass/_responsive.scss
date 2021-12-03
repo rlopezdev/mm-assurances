@@ -8,20 +8,66 @@
     .container {
         max-width: 980px;
     }
-}
-
-@media screen and (max-width: 1024px) {
     h1 {
-        font-size: 32px;
+        font-size: 30px;
     }
     h2 {
-        font-size: 28px;
+        font-size: 26px;
         font-weight: 600;
     }
     h3 {
         font-size: 24px;
         font-weight: 600;
     }
+    .call-to-action {
+        .content {
+            font-size: 18px;
+        }
+    }
+    .content-block {
+        padding: 0 20px;
+        p {
+            font-size: 16px;
+        }
+        ul {
+            li {
+                font-size: 16px;
+            }
+        }
+        .highlight {
+            font-size: 16px;
+        }
+    }
+    .container {
+        &.row {
+            .content-block {
+                flex: 1 1 600px;
+                margin: 20px 0;
+            }
+            .img-block {
+                flex: 1 1 300px;
+            }
+        }
+    }
+    section {
+        padding: 40px 0;
+    }
+    #follow-block {
+        .social-icons-container {
+            .homepage-social-icon {
+                width: 40px;
+                height: 40px;
+            }
+        }
+    }
+    .footer-contact {
+        .footer-contact-link {
+            font-size: 16px;
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
     .container {
         max-width: 100%;
         flex-wrap: wrap;
@@ -36,29 +82,34 @@
     #homepage-headline {
         h1.headline-title,
         .header-headline {
-            font-size: 32px;
+            font-size: 28px;
         }
     }
-    .container {
-        &.row {
-            .content-block {
-                flex: 1 1 600px;
-                margin: 20px 0;
-            }
-            .img-block {
-                flex: 1 1 300px;
-            }
+    .headline-links {
+        .headline-link-container {
+            margin: 10px auto;
         }
     }
 }
 
 @media screen and (max-width: 960px) {
+    h1 {
+        font-size: 26px;
+    }
+    h2 {
+        font-size: 24px;
+        font-weight: 600;
+    }
+    h3 {
+        font-size: 20px;
+        font-weight: 600;
+    }
     #forfait-auto {
         thead {
             th {
                 &,
                 &.garanties {
-                    font-size: 14px;
+                    font-size: 12px;
                 }
                 padding: 10px;
             }
@@ -67,6 +118,9 @@
             tr {
                 td {
                     padding: 15px;
+                    &.label {
+                        font-size: 12px;
+                    }
                 }
             }
         }
